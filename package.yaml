@@ -1,0 +1,19 @@
+config_version : 0
+
+name: pyside
+
+version: 1.2.4
+
+requires:
+  - qt
+  - shiboken-1.2.4
+  - python-2.7
+
+variants:
+- [ platform-linux ]
+
+commands:
+- export PATH=!ROOT!/bin:$PATH
+- export PATH=!ROOT!/bin:$PATH
+- export LD_LIBRARY_PATH=!ROOT!/lib:$LD_LIBRARY_PATH
+- export PYTHONPATH=:!ROOT!/lib64/python2.7/site-packages:$PYTHONPATH
