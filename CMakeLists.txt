@@ -24,3 +24,8 @@ ExternalProject_add(
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
     BUILD_IN_SOURCE 0
 )
+
+rez_install_files(
+    cmake/pyside.cmake
+    DESTINATION .
+)
