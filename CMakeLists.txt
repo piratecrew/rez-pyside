@@ -19,7 +19,7 @@ ExternalProject_add(
     pyside
     GIT_REPOSITORY ${url_pyside}
     GIT_TAG ${pyside_version}
-    PREFIX shiboken
+    PREFIX pyside
     BUILD_COMMAND make -j1 VERBOSE=on
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
     BUILD_IN_SOURCE 0
